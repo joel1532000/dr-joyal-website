@@ -1,0 +1,11 @@
+{
+  // Always serve index.html for every route. This allows React Router to handle
+  // client-side routing on static hosting. Without this, navigating directly
+  // to routes like /about or /blog may result in a 404.
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  // Enable clean URLs (omit .html extensions). This is optional and
+  // primarily for cosmetic purposes.
+  "cleanUrls": true
+}
