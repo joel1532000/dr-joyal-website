@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Dr. Joyal S</title>
+  <meta name="description" content="Get in touch with Dr. Joyal S for appointments and inquiries. Book an appointment via the online form or contact via WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='50%' dy='.35em' text-anchor='middle' font-size='50'>🩺</text></svg>" />
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+      <h1>Dr. Joyal S</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding:40px 0;">
+      <h2 id="appointment">Contact &amp; Appointments</h2>
+      <p>
+        We’d love to hear from you. Use the form below to send a message or
+        request an appointment. Alternatively, chat with us directly on
+        WhatsApp using the floating button.
+      </p>
+      <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width:600px;">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin-bottom:10px;" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin-bottom:10px;" /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required style="width:100%; padding:8px; margin-bottom:10px;"></textarea><br />
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <h3 style="margin-top:40px;">Our Location</h3>
+      <p>Sivagangai, Tamil Nadu, India</p>
+      <div style="position:relative; overflow:hidden; padding-top:56.25%; height:0;">
+        <!-- Google Maps embed showing Sivagangai -->
+        <iframe src="https://www.google.com/maps?q=Sivagangai,Tamil+Nadu&output=embed" style="border:0; position:absolute; top:0; left:0; width:100%; height:100%;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Dr. Joyal S. All rights reserved.</p>
+      <p>Based in Sivagangai, Tamil Nadu.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/919876543210?text=Hello%20Dr.%20Joyal%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" title="Chat on WhatsApp">💬</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
